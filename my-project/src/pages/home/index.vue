@@ -3,11 +3,11 @@
     <view class="search-content">
       <input type="text" placeholder="热门搜索">
     </view>
-    <view>图片滚动</view>
+    <view>首页图片</view>
     <view class="hot-txt">
       <view v-for="hot in hotTxt" :key="hot.name" class="hot">{{hot.name}}</view>
     </view>
-    <view>卡片信息</view>
+    <view>消息快讯列表</view>
   </view>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   data(){
     return {
       hotTxt: [
-        {name:"地摊"},
+        {name: "地摊"},
         {name: "疫情"},
         {name: "明星"}
       ]
